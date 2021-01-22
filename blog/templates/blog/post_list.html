@@ -1,23 +1,18 @@
 <html>
     <head>
-        <title>El Blog de Mariela</title>
+        <title>Django Girls blog</title>
     </head>
     <body>
         <div>
-            <h1><a href="/">Mi primer Blog</a></h1>
-        </div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
 
-        <div>
-            <p>published: 22.01.2021, 11.34</p>
-            <h2><a href="">Mi primera publicación</a></h2>
-            <p>¿Cómo está quedando?, ¿te gusta?
-            </p>
-        </div>
-
-        <div>
-            <p>published:  22.01.2021, 11.34</p>
-            <h2><a href="">Mi segunda publicación</a></h2>
-            <p>Python, Django, Html.</p>
-        </div>
+{% for post in posts %}
+    <div>
+        <p> publicado: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
     </body>
 </html>
