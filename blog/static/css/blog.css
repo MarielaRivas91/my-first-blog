@@ -1,8 +1,9 @@
 h1 a, h2 a {
-    color: #C25100;
+    color:white;
     font-family: 'Lobster';
 }
 body {
+    background-color: lightblue;
     padding-left: 15px;
 }
 .page-header {
@@ -12,7 +13,7 @@ body {
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
+    color: #c90e0e;
     font-size: 36pt;
     text-decoration: none;
 }
